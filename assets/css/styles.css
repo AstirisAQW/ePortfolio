@@ -14,6 +14,30 @@
   box-sizing: border-box;
 }
 
+/* Wrapper */
+#wrapper {
+  width: 64em;
+  max-width: calc(100% - 4em);
+  margin: 0 auto;
+  padding-top: 80px; /* Prevent content from hiding behind fixed header */
+}
+
+@media screen and (max-width: 768px) {
+  #wrapper {
+    max-width: calc(100% - 2em);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #wrapper {
+    max-width: calc(100% - 1em);
+  }
+}
+
+
+
+
+
 html, body {
   background-color: var(--dark-100);
   color: var(--light-100);
@@ -24,9 +48,7 @@ html, body {
 
 /* Bold Typography */
 h1, h2, h3 {
-  font-size: 2.5rem;
-  font-weight: 900;
-  text-transform: uppercase;
+  font-size: 1.5rem;
   letter-spacing: 2px;
 }
 
@@ -64,23 +86,38 @@ a:hover {
 /* Header */
 header {
   position: fixed;
-  z-index: 1;
-  top: 0; /* Align to the top of the viewport */
-  width: 100%; /* Make the header span the entire width */
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: var(--dark-200);
-  padding: 10px 40px;
   border-bottom: 4px solid var(--accent-100);
   box-shadow: 0 0 10px var(--accent-200);
 }
 
 header nav {
+  max-width: 64em; /* Same as #wrapper */
+  width: calc(100% - 4em);
+  margin: 0 auto; /* Center the nav content */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  header nav {
+    width: calc(100% - 2em);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header nav {
+    width: calc(100% - 1em);
+  }
+}
+
 .logo a {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--accent-100);
@@ -89,7 +126,7 @@ header nav {
 .nav-menu ul {
   display: flex;
   list-style: none;
-  gap: 30px;
+  gap: 20px;
 }
 
 .nav-menu a {
@@ -109,7 +146,6 @@ header nav {
   justify-content: space-between;
   padding: 100px 40px;
   background-color: var(--dark-100);
-  border-bottom: 4px solid var(--dark-200);
 }
 
 #home .left .content h2 {
@@ -130,69 +166,55 @@ header nav {
   border: 3px solid var(--accent-100);
 }
 
-
 /* Skill Section */
 #skill-section{
   border-top: 4px solid var(--accent-100);
   background-color: var(--dark-200);
   padding: 80px 40px;
 }
-.skill-container {
+.header{
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: space-between; /* Space between h1 and button */
+  margin-bottom: 20px; /* Add spacing if needed */
+}
+.skill-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
 }
-
-.skill-object {
-  display: grid;
-
+.skill-object{
   background-color: var(--dark-100);
   padding: 20px;
   border: 3px solid var(--accent-200);
   box-shadow: 5px 5px 0 var(--accent-100);
   transition: all 0.3s ease;
-  text-align: center;
+  align-items: center;
 }
-
-.skill-object:hover {
+.skill-object:hover{
   transform: translate(-5px, -5px);
   box-shadow: 10px 10px 0 var(--accent-100);
 }
 
-.skill-title h2 {
+.skill-info h2{
+  margin-bottom: 10px;
+  text-align: center;
   font-size: 1.8rem;
   color: var(--accent-100);
-  margin-bottom: 10px; /* Add space between title and icon */
+}
+.skill-info img{
+  flex: grid;
+  width: 60px;   /* Adjust the size */
+  height: auto;  /* Maintain aspect ratio */
+  margin: 10px
 }
 
-.skill-name {
-  display: flex; /* Enable flex layout for icon and text */
-  flex-direction: row; /* Align icon and name in a row */
-  gap: 15px; /* Add spacing between the icon and text */
-  margin-top: 10px; /* Add spacing above the skill name */
-}
 
 
-.skill-icon {
-  width: 40px;
-  height: 40px;
-  margin: 0; /* Remove unnecessary margin */
-  transition: transform 0.3s ease;
-}
 
-.skill-icon-name {
-  font-size: 1.5rem;
-  color: var(--light-100);
-  text-transform: uppercase;
-  font-weight: bold;
-}
 
-.skill-icon:hover {
-  transform: scale(1.1);
-}
 
-/* Projects Section */
+/* Project Section */
 #project-section {
   border-top: 4px solid var(--accent-100);
   background-color: var(--dark-200);
