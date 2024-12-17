@@ -222,47 +222,22 @@ header nav {
   text-align: center;
   border-top: 4px solid var(--accent-100);
 }
-
-.contact-form {
-  margin: 0 auto;
-  max-width: 500px;
-  border: 3px solid var(--accent-200);
-  padding: 20px;
-  box-shadow: 5px 5px 0 var(--accent-100);
+#contact .contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Space between icons */
+  margin-top: 20px;
 }
 
-.form-group label {
-  font-size: 1.2rem;
-  font-weight: bold;
+#contact .contact-icons a {
   color: var(--light-100);
-  display: block;
-  margin-bottom: 5px;
+  font-size: 2.5rem; /* Icon size */
+  transition: all 0.3s ease;
 }
 
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid var(--accent-100);
-  background-color: transparent;
-  color: var(--light-100);
-  margin-bottom: 10px;
-  font-size: 1rem;
-}
-
-.form-group button {
-  background-color: var(--accent-100);
-  color: var(--dark-100);
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-.form-group button:hover {
-  background-color: var(--accent-200);
-  color: var(--light-100);
+#contact .contact-icons a:hover {
+  color: var(--accent-100);
+  transform: scale(1.1); /* Slight zoom effect */
 }
 
 /* Footer */
