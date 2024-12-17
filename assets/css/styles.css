@@ -185,17 +185,6 @@ header nav {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* Skill Section */
 #skill-section{
   padding: 40px 40px;
@@ -283,76 +272,54 @@ header nav {
 
 /* Contact Section */
 #contact-section {
-  padding: 40px 40px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 40px;
-  align-items: start;
-  border-top: 1px solid #ffffff;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  border-top: 2px solid #ffffff;
 }
 
-#contact-section .socials {
+#contact-section h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
   text-align: center;
+  color: #ffffff;
+}
+
+#contact-section p {
+  text-align: center;
+  font-size: 1rem;
+  color: #abb2bf;
+  max-width: 400px;
+  margin: 0 auto 20px;
 }
 
 #contact-section .contact-icons {
   display: flex;
   justify-content: center;
-  gap: 30px; /* Space between icons */
-  margin-top: 20px;
+  gap: 20px; /* Space between icons */
+  margin-top: 10px;
 }
 
 #contact-section .contact-icons a {
   color: #ffffff;
-  font-size: 2rem; /* Icon size */
-  transition: all 0.2s ease;
+  font-size: 2.5rem; /* Icon size */
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 #contact-section .contact-icons a:hover {
   color: #abb2bf;
+  transform: scale(1.1); /* Slight zoom effect */
 }
 
-/* Contact Form */
-#contact-section .contact-form h1 {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  #contact-section {
+      flex-direction: column;
+      align-items: center;
+  }
 }
 
-#contact-section .contact-form form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 
-#contact-section .contact-form .form-group {
-  display: flex;
-  flex-direction: column;
-}
-
-#contact-section .contact-form .form-group label {
-  font-size: 1rem;
-  margin-bottom: 5px;
-  color: #abb2bf;
-}
-
-#contact-section .contact-form .form-group input,
-#contact-section .contact-form .form-group textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #abb2bf;
-  border-radius: 5px;
-  background: #282c33;
-  color: #ffffff;
-  font-size: 1rem;
-  outline: none;
-  transition: all 0.2s ease;
-}
-
-#contact-section .contact-form .form-group input:focus,
-#contact-section .contact-form .form-group textarea:focus {
-  border-color: #ffffff;
-}
-
-#contact-section .contact-form .form-group button {
-  align-self: flex-start;
-}
