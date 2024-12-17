@@ -131,41 +131,66 @@ header nav {
 }
 
 
-/* Skills Section */
-#skills{
+/* Skill Section */
+#skill-section{
   background-color: var(--dark-200);
   padding: 80px 40px;
 }
-.skills-list{
+.skill-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
   gap: 40px;
 }
-.skill {
+
+.skill-object {
   background-color: var(--dark-100);
   padding: 20px;
   border: 3px solid var(--accent-200);
   box-shadow: 5px 5px 0 var(--accent-100);
   transition: all 0.3s ease;
+  text-align: center;
 }
 
-.skill:hover {
+.skill-object:hover {
   transform: translate(-5px, -5px);
   box-shadow: 10px 10px 0 var(--accent-100);
 }
 
-.skill-info h2{
-  margin-top: 10px;
+.skill-title h2 {
   font-size: 1.8rem;
   color: var(--accent-100);
+  margin-bottom: 10px; /* Add space between title and icon */
 }
-.skill-info p {
-  font-size: 1rem;
+
+.skill-name {
+  display: flex; /* Enable flex layout for icon and text */
+  flex-direction: row; /* Align icon and name in a row */
+  gap: 15px; /* Add spacing between the icon and text */
+  margin-top: 10px; /* Add spacing above the skill name */
+}
+
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0; /* Remove unnecessary margin */
+  transition: transform 0.3s ease;
+}
+
+.skill-icon-name {
+  font-size: 1.5rem;
   color: var(--light-100);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
 }
 
 /* Projects Section */
-#projects {
+#project-section {
   background-color: var(--dark-200);
   padding: 80px 40px;
 }
@@ -175,15 +200,13 @@ header nav {
   justify-content: space-between; /* Space between h1 and button */
   margin-bottom: 20px; /* Add spacing if needed */
 }
-
-
-.projects-list {
+.project-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
 }
 
-.project {
+.project-object {
   background-color: var(--dark-100);
   padding: 20px;
   border: 3px solid var(--accent-200);
@@ -191,7 +214,7 @@ header nav {
   transition: all 0.3s ease;
 }
 
-.project:hover {
+.project-object:hover {
   transform: translate(-5px, -5px);
   box-shadow: 10px 10px 0 var(--accent-100);
 }
