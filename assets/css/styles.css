@@ -133,17 +133,20 @@ header nav {
 
 /* Skill Section */
 #skill-section{
+  border-top: 4px solid var(--accent-100);
   background-color: var(--dark-200);
   padding: 80px 40px;
 }
 .skill-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
 }
 
 .skill-object {
+  display: grid;
+
   background-color: var(--dark-100);
   padding: 20px;
   border: 3px solid var(--accent-200);
@@ -191,6 +194,7 @@ header nav {
 
 /* Projects Section */
 #project-section {
+  border-top: 4px solid var(--accent-100);
   background-color: var(--dark-200);
   padding: 80px 40px;
 }
