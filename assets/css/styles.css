@@ -40,7 +40,7 @@ h1 {
 h1::after {
   content: "";
   display: block;
-  width: 300%;
+  width: 150%;
   height: 2px;
   background-color: #c470db;
   margin: 5px auto 0;
@@ -128,7 +128,6 @@ header nav {
   color: #ffffff;
 }
 
-/* Home Section */
 #home {
   display: flex;
   align-items: center;
@@ -137,22 +136,38 @@ header nav {
   background-color: #282c33;
 }
 
-#home .left .content h2 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+.home-content {
+  max-width: 600px;
   color: #ffffff;
 }
 
-#home .left .content p {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+.home-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #c470db;
 }
 
-#home .right img {
-  width: 500px;
-  height: auto;
-  border: 3px solid #ffffff;
+.home-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
+
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 2px solid #c470db;
+  color: #ffffff;
+  background: none;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #c470db61;
+}
+
 
 #about-me-section {
   padding: 40px;
