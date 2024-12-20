@@ -1,6 +1,6 @@
 /* Wrapper */
 #wrapper {
-  width: 64em;
+  width: 80em; /* Increase to desired width */
   max-width: calc(100% - 4em);
   margin: 0 auto;
   padding-top: 80px;
@@ -257,7 +257,7 @@ header nav {
 .project-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
+  gap: 30px;
 }
 
 .project-object {
