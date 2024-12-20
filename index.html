@@ -1,179 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Linking the external css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="assets/css/styles.css">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="assets/images/crest.png" />
-        <script src="./oneko-element.js?define" type="module"></script>
-        <script src="./oneko.js"></script>
-        <title>AstirisAQW Portfolio</title>
-    </head>
+    <!-- Linking the external css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/crest.png" />
+    <script src="./oneko-element.js?define" type="module"></script>
+    <script src="./oneko.js"></script>
+    <title>AstirisAQW Portfolio</title>
+</head>
 
-    <body>
-        <o-neko
-        id="nekoFollower"
-        speed="10"
-        style="position: fixed; filter: z-index 1000; transform: scale(1.5)"
-        ></o-neko>
-        <div id="wrapper">
-            <!-- Header -->
-            <header>
-                <nav>
-                    <div class="logo"><a href="#home">Portfolio</a></div>
-                    <div class="nav-menu">
-                        <ul>
-                            <li><a href="#home">#Home</a></li>
-                            <li><a href="#about-me-section">#About</a></li>
-                            <li><a href="#skill-section">#Skills</a></li>
-                            <li><a href="#project-section">#Projects</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-
-            <!-- Home Section -->
-            <section id="home">
-                <div class="left">
-                    <div class="content">
-                        <h1>Hi, I'm <span style="color: #abb2bf;">AstirisAQW</span></h1>
-                        <p>
-                            A Junior Computer Science Student |
-                        </p>
-                    </div>
-                    <a href="#contact-section" class="btn">Contact Me</a>
+<body>
+    <o-neko
+    id="nekoFollower"
+    speed="10"
+    style="position: fixed; filter: z-index 1000; transform: scale(1.5)"
+    ></o-neko>
+    <div id="wrapper">
+        <!-- Header -->
+        <header>
+            <nav>
+                <div class="logo"><a href="#home"><span style="color: #c470db;">#</span>Portfolio</a></div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="#home"><span style="color: #c470db;">#</span>Home</a></li>
+                        <li><a href="#about-me-section"><span style="color: #c470db;">#</span>About</a></li>
+                        <li><a href="#skill-section"><span style="color: #c470db;">#</span>Skills</a></li>
+                        <li><a href="#project-section"><span style="color: #c470db;">#</span>Projects</a></li>
+                    </ul>
                 </div>
+            </nav>
+        </header>
 
-            </section>
+        <!-- Home Section -->
+        <section id="home">
+            <a href="#contact-section" class="btn">Contact Me</a>
+        </section>
 
-            <!-- about-me section-->
-             <section id="about-me-section">
-                <div class="header">
-                    <h1>#About Me</h1>
-                </div>
-                <div class="about-me-container">
-                    <div class="about-me-text">
-                        
-                        <p>
-                            I’m Joseph Jose A. Deysolong, a 3rd-year Computer Science student passionate about solving problems
-                            with technology. My studies have equipped me with skills in programming, data structures,
-                            and software development. I enjoy building projects, learning new tools,
-                            and exploring how technology can make everyday life easier.
-                        </p>
-                        <p>
-                            As a pioneering student of the Computer Science at USTP CDO, I had the chance to collaborate with intelligent
-                            and driven individuals who share my passion for innovation.
-                        </p>
-                    </div>
-                    <div class="about-me-image">
-                        <img src="assets/images/profile.png">
-
-                    </div>
-                </div>
-             </section>
-
-            <!-- skills section-->
-            <section id="skill-section">
-                <div class="header">
-                    <h1>#Skills</h1>
-                </div>
-
-                <div class="skill-container"> 
-                    <div class="skill-object">
-                        <div class="skill-info">
-                            <h2><i class="fas fa-code"></i> Languages</h2>
-                            <img src="assets/svg/c++.svg" alt="">
-                            <img src="assets/svg/java.svg" alt="">
-                            <img src="assets/svg/python.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- projects Section -->
-            <section id="project-section">
-                <div class="header">
-                    <h1>#Projects</h1>
-                </div>
-
-                <div class="project-container">
+        <!-- about-me section-->
+        <section id="about-me-section">
+            <div class="header">
+                <h1><span style="color: #c470db;">#</span>About Me</h1>
+            </div>
+            <div class="about-me-container">
+                <div class="about-me-text">
                     
-                    <div class="project-object">
-                        <div class="project-image"> <img src="assets/images/project1.png"></div>
-                        <div class="project-info">
-                            <h2 class="project-title">DFA-&-NFA-Simulator</h2>
-                            <p class="project-desc">Automata simulator for NFA and DFA</p>
-                            <div class="status">
-                                <a href="https://github.com/KvassAndVodka/DFA-and-NFA-Simulator" class="btn">Github →</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-object">
-                        <div class="project-image">
-                            <img src="assets/images/project2.png">
-                        </div>
-                        <div class="project-info">
-                            <h2 class="project-title">BlackJack-in-MIPS</h2>
-                            <p class="project-desc">Simplified version of the Blackjack card game using MIPS</p>
-                            <div class="status">
-                                <a href="https://github.com/AstirisAQW/BlackJack-MIPS-Assembly" class="btn">Github →</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-object">
-                        <div class="project-image">
-                            <img src="assets/images/project3.png">
-                        </div>
-                        <div class="project-info">
-                            <h2 class="project-title">Socket.IO Chat Application</h2>
-                            <p class="project-desc">A Real-time chat application built using Node.js, Express, and Socket.IO</p>
-                            <div class="status">
-                                <a href="https://github.com/AstirisAQW/socketChat" class="btn">Github →</a>
-                            </div>
-                        </div>
-                    </div>
+                    <p>
+                        I’m Joseph Jose A. Deysolong, a 3rd-year Computer Science student passionate about solving problems
+                        with technology. My studies have equipped me with skills in programming, data structures,
+                        and software development. I enjoy building projects, learning new tools,
+                        and exploring how technology can make everyday life easier.
+                    </p>
+                    <p>
+                        As a pioneering student of the Computer Science at USTP CDO, I had the chance to collaborate with intelligent
+                        and driven individuals who share my passion for innovation.
+                    </p>
+                </div>
+                <div class="about-me-image">
+                    <img src="assets/images/profile.jpg">
 
                 </div>
-            </section>
+            </div>
+        </section>
 
-<!-- Contact Section -->
-<section id="contact-section">
-    <!-- Social Media -->
-    <div class="socials">
-        <h1>#Media</h1>
-        <div class="contact-icons">
-            <a href="https://github.com/AstirisAQW" target="_blank" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
-    </div>
+        <!-- skills section-->
+        <section id="skill-section">
+            <div class="header">
+                <h1><span style="color: #c470db;">#</span>Skills</h1>
+            </div>
 
-    <!-- Contact Me -->
-    <div class="contact-me">
-        <h1>#Contact Me</h1>
-        <p>Feel free to reach out via email for collaboration, projects, or inquiries!</p>
-        <div class="contact-icons">
-            <a href="mailto:deysolong.josephjose457@gmail.com" target="_blank" aria-label="Email">
-                <i class="fas fa-envelope"></i>
-            </a>
-        </div>
-    </div>
-</section>
-            <!-- Footer -->
-            <footer>
-                <div class="footer-content">
+            <div class="skill-container"> 
+                <div class="skill-object">
+                    <div class="skill-info">
+                        <h2><span style="color: #c470db;"><></span> Languages</h2>
+                        <img src="assets/svg/c++.svg" alt="">
+                        <img src="assets/svg/java.svg" alt="">
+                        <img src="assets/svg/python.svg" alt="">
+                    </div>
                 </div>
-            </footer>
-        </div>
-    </body>
-    <script src="assets/js/script.js"></script>
+            </div>
+        </section>
+
+        <!-- projects Section -->
+        <section id="project-section">
+            <div class="header">
+                <h1><span style="color: #c470db;">#</span>Projects</h1>
+            </div>
+
+            <div class="project-container">
+                
+                <div class="project-object">
+                    <div class="project-image"> <img src="assets/images/project1.png"></div>
+                    <div class="project-info">
+                        <h2 class="project-title">DFA-&-NFA-Simulator</h2>
+                        <p class="project-desc">Automata simulator for NFA and DFA</p>
+                        <div class="status">
+                            <a href="https://github.com/KvassAndVodka/DFA-and-NFA-Simulator" class="btn">Github →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-object">
+                    <div class="project-image">
+                        <img src="assets/images/project2.png">
+                    </div>
+                    <div class="project-info">
+                        <h2 class="project-title">BlackJack-in-MIPS</h2>
+                        <p class="project-desc">Simplified version of the Blackjack card game using MIPS</p>
+                        <div class="status">
+                            <a href="https://github.com/AstirisAQW/BlackJack-MIPS-Assembly" class="btn">Github →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-object">
+                    <div class="project-image">
+                        <img src="assets/images/project3.png">
+                    </div>
+                    <div class="project-info">
+                        <h2 class="project-title">Socket.IO Chat Application</h2>
+                        <p class="project-desc">A Real-time chat application built using Node.js, Express, and Socket.IO</p>
+                        <div class="status">
+                            <a href="https://github.com/AstirisAQW/socketChat" class="btn">Github →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact-section">
+            <!-- Social Media -->
+            <div class="socials">
+                <h2><span style="color: #c470db;">#</span>Media</h2>
+                <div class="contact-icons">
+                    <a href="https://github.com/AstirisAQW" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/Jongks0/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/astirisaqw/" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Me -->
+            <div class="contact-me">
+                <h2><span style="color: #c470db;">#</span>Contact Me</h2>
+                <div class="contact-icons">
+                    <a href="mailto:deysolong.josephjose457@gmail.com" target="_blank" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="assets/js/script.js"></script>
 </html>
