@@ -1,6 +1,6 @@
 /* Wrapper */
 #wrapper {
-  width: 80em; /* Increase to desired width */
+  width: 70em; /* Increase to desired width */
   max-width: calc(100% - 4em);
   margin: 0 auto;
   padding-top: 80px;
