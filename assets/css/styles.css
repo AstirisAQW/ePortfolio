@@ -1,3 +1,9 @@
+body {
+  background-color: #282c33;
+  color: #ffffff;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
 /* Wrapper */
 #wrapper {
   width: 70em; /* Increase to desired width */
@@ -19,22 +25,16 @@
   }
 }
 
-html, body {
+#main-container{
   background-color: #282c33;
-  color: #ffffff;
-  font-family: 'Poppins', Arial, sans-serif;
+
 }
 
-/* Bold Typography */
-h2, h3 {
-  font-size: 1.2rem;
-  letter-spacing: 0.5px;
-}
-
-h1 { 
+h1, h2, h3 {
   color: #ffffff;
   font-size: 1.2rem;
   letter-spacing: 0.5px;
+  
 }
 
 h1::after {
@@ -74,7 +74,6 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #282c33;
 }
 
 header nav {
@@ -84,6 +83,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #282c33;
 }
 
 @media screen and (max-width: 768px) {
@@ -133,7 +133,6 @@ header nav {
   align-items: center;
   justify-content: space-between;
   padding: 100px 40px;
-  background-color: #282c33;
 }
 
 .home-content {

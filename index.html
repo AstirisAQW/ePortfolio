@@ -21,154 +21,156 @@
 <body>
     <o-neko id="nekoFollower" speed="10" style="position: fixed; filter: z-index 1000; transform: scale(1.5)"></o-neko>
     <div id="wrapper">
-        <!-- Header -->
-        <header>
-            <nav>
-                <div class="logo"><a href="#home"><span style="color: #c470db;">#</span>Portfolio</a></div>
-                <div class="nav-menu">
-                    <ul>
-                        <li><a href="#home"><span style="color: #c470db;">#</span>Home</a></li>
-                        <li><a href="#about-me-section"><span style="color: #c470db;">#</span>About</a></li>
-                        <li><a href="#skill-section"><span style="color: #c470db;">#</span>Skills</a></li>
-                        <li><a href="#project-section"><span style="color: #c470db;">#</span>Projects</a></li>
-                    </ul>
+        <div id="main-container">
+            <!-- Header -->
+            <header>
+                <nav>
+                    <div class="logo"><a href="#home"><span style="color: #c470db;">#</span>Portfolio</a></div>
+                    <div class="nav-menu">
+                        <ul>
+                            <li><a href="#home"><span style="color: #c470db;">#</span>Home</a></li>
+                            <li><a href="#about-me-section"><span style="color: #c470db;">#</span>About</a></li>
+                            <li><a href="#skill-section"><span style="color: #c470db;">#</span>Skills</a></li>
+                            <li><a href="#project-section"><span style="color: #c470db;">#</span>Projects</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <section id="home">
+                <div class="home-content">
+                    <h1>Welcome to My Portfolio</h1>
+                    <p>I like making stuff.</p>
                 </div>
-            </nav>
-        </header>
+            
+            </section>
 
-        <section id="home">
-            <div class="home-content">
-                <h1>Welcome to My Portfolio</h1>
-                <p>I like making stuff.</p>
-            </div>
-           
-        </section>
+            <!-- about-me section-->
+            <section id="about-me-section">
+                <div class="header">
+                    <h1><span style="color: #c470db;">#</span>About Me</h1>
+                </div>
+                <div class="about-me-container">
+                    <div class="about-me-text">
+                        
+                        <p>
+                            I’m Joseph Jose A. Deysolong, a 3rd-year Computer Science student passionate about solving problems
+                            with technology. My studies have equipped me with skills in programming, data structures,
+                            and software development. I enjoy building projects, learning new tools,
+                            and exploring how technology can make everyday life easier.
+                        </p>
+                        <p>
+                            As a pioneering student of the Computer Science at USTP CDO, I had the chance to collaborate with intelligent
+                            and driven individuals who share my passion for innovation.
+                        </p>
+                    </div>
+                    <div class="about-me-image">
+                        <img src="assets/images/profile.jpg">
 
-        <!-- about-me section-->
-        <section id="about-me-section">
-            <div class="header">
-                <h1><span style="color: #c470db;">#</span>About Me</h1>
-            </div>
-            <div class="about-me-container">
-                <div class="about-me-text">
+                    </div>
+                </div>
+            </section>
+
+            <!-- skills section-->
+            <section id="skill-section">
+                <div class="header">
+                    <h1><span style="color: #c470db;">#</span>Skills</h1>
+                </div>
+
+                <div class="skill-container"> 
+                    <div class="skill-object">
+                        <div class="skill-info">
+                            <h2><span style="color: #c470db;"><></span> Languages</h2>
+                            <img src="assets/svg/c++.svg" alt="">
+                            <img src="assets/svg/java.svg" alt="">
+                            <img src="assets/svg/python.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- projects Section -->
+            <section id="project-section">
+                <div class="header">
+                    <h1><span style="color: #c470db;">#</span>Projects</h1>
+                </div>
+
+                <div class="project-container">
                     
-                    <p>
-                        I’m Joseph Jose A. Deysolong, a 3rd-year Computer Science student passionate about solving problems
-                        with technology. My studies have equipped me with skills in programming, data structures,
-                        and software development. I enjoy building projects, learning new tools,
-                        and exploring how technology can make everyday life easier.
-                    </p>
-                    <p>
-                        As a pioneering student of the Computer Science at USTP CDO, I had the chance to collaborate with intelligent
-                        and driven individuals who share my passion for innovation.
-                    </p>
-                </div>
-                <div class="about-me-image">
-                    <img src="assets/images/profile.jpg">
-
-                </div>
-            </div>
-        </section>
-
-        <!-- skills section-->
-        <section id="skill-section">
-            <div class="header">
-                <h1><span style="color: #c470db;">#</span>Skills</h1>
-            </div>
-
-            <div class="skill-container"> 
-                <div class="skill-object">
-                    <div class="skill-info">
-                        <h2><span style="color: #c470db;"><></span> Languages</h2>
-                        <img src="assets/svg/c++.svg" alt="">
-                        <img src="assets/svg/java.svg" alt="">
-                        <img src="assets/svg/python.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- projects Section -->
-        <section id="project-section">
-            <div class="header">
-                <h1><span style="color: #c470db;">#</span>Projects</h1>
-            </div>
-
-            <div class="project-container">
-                
-                <div class="project-object">
-                    <div class="project-image"> <img src="assets/images/project1.png"></div>
-                    <div class="project-info">
-                        <h2 class="project-title">DFA-&-NFA-Simulator</h2>
-                        <p class="project-desc">Automata simulator for NFA and DFA</p>
-                        <div class="status">
-                            <a href="https://github.com/KvassAndVodka/DFA-and-NFA-Simulator" class="btn">Github →</a>
+                    <div class="project-object">
+                        <div class="project-image"> <img src="assets/images/project1.png"></div>
+                        <div class="project-info">
+                            <h2 class="project-title">DFA-&-NFA-Simulator</h2>
+                            <p class="project-desc">Automata simulator for NFA and DFA</p>
+                            <div class="status">
+                                <a href="https://github.com/KvassAndVodka/DFA-and-NFA-Simulator" class="btn">Github →</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-object">
-                    <div class="project-image">
-                        <img src="assets/images/project2.png">
-                    </div>
-                    <div class="project-info">
-                        <h2 class="project-title">BlackJack-in-MIPS</h2>
-                        <p class="project-desc">Simplified version of the Blackjack card game using MIPS</p>
-                        <div class="status">
-                            <a href="https://github.com/AstirisAQW/BlackJack-MIPS-Assembly" class="btn">Github →</a>
+                    <div class="project-object">
+                        <div class="project-image">
+                            <img src="assets/images/project2.png">
+                        </div>
+                        <div class="project-info">
+                            <h2 class="project-title">BlackJack-in-MIPS</h2>
+                            <p class="project-desc">Simplified version of the Blackjack card game using MIPS</p>
+                            <div class="status">
+                                <a href="https://github.com/AstirisAQW/BlackJack-MIPS-Assembly" class="btn">Github →</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="project-object">
-                    <div class="project-image">
-                        <img src="assets/images/project3.png">
-                    </div>
-                    <div class="project-info">
-                        <h2 class="project-title">Socket.IO Chat Application</h2>
-                        <p class="project-desc">A Real-time chat application built using Node.js, Express, and Socket.IO</p>
-                        <div class="status">
-                            <a href="https://github.com/AstirisAQW/socketChat" class="btn">Github →</a>
+                    <div class="project-object">
+                        <div class="project-image">
+                            <img src="assets/images/project3.png">
+                        </div>
+                        <div class="project-info">
+                            <h2 class="project-title">Socket.IO Chat Application</h2>
+                            <p class="project-desc">A Real-time chat application built using Node.js, Express, and Socket.IO</p>
+                            <div class="status">
+                                <a href="https://github.com/AstirisAQW/socketChat" class="btn">Github →</a>
+                            </div>
                         </div>
                     </div>
+
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact-section">
+                <!-- Social Media -->
+                <div class="socials">
+                    <h2><span style="color: #c470db;">#</span>Media</h2>
+                    <div class="contact-icons">
+                        <a href="https://github.com/AstirisAQW" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.facebook.com/Jongks0/" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/astirisaqw/" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
 
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact-section">
-            <!-- Social Media -->
-            <div class="socials">
-                <h2><span style="color: #c470db;">#</span>Media</h2>
-                <div class="contact-icons">
-                    <a href="https://github.com/AstirisAQW" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.facebook.com/Jongks0/" target="_blank" aria-label="Facebook">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/astirisaqw/" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-instagram"></i>
-                    </a>
+                <!-- Contact Me -->
+                <div class="contact-me">
+                    <h2><span style="color: #c470db;">#</span>Contact Me</h2>
+                    <div class="contact-icons">
+                        <a href="mailto:deysolong.josephjose457@gmail.com" target="_blank" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Contact Me -->
-            <div class="contact-me">
-                <h2><span style="color: #c470db;">#</span>Contact Me</h2>
-                <div class="contact-icons">
-                    <a href="mailto:deysolong.josephjose457@gmail.com" target="_blank" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
+            </section>
+            
+            <!-- Footer -->
+            <footer>
+                <div class="footer-content">
                 </div>
-            </div>
-        </section>
-        
-        <!-- Footer -->
-        <footer>
-            <div class="footer-content">
-            </div>
-        </footer>
+            </footer>  
+        </div>
     </div>
 </body>
 <script src="assets/js/script.js"></script>
