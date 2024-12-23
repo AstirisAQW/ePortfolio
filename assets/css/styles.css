@@ -1,3 +1,4 @@
+
 body {
   background-color: #282c33;
   color: #ffffff;
@@ -205,41 +206,46 @@ header nav {
   }
 }
 
-/* Skill Section */
 #skill-section {
-  padding: 40px 40px;
+  padding: 40px;
+  background-color: #282c33;
 }
 
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-bottom: 20px;
 }
 
 .skill-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 .skill-object {
-  padding: 20px;
-  border: 2px solid #ffffff;
+  display: flex;
   align-items: center;
+  border: 1px solid #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skill-info h2 {
-  text-align: center;
-  font-size: 1.2rem;
+
+.skill-object-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.skill-object-name {
+  font-size: 16px;
+  font-weight: 500;
   color: #ffffff;
 }
 
-.skill-info img {
-  width: 60px;
-  height: auto;
-  margin: 10px;
-}
 
 /* Project Section */
 #project-section {
@@ -260,7 +266,7 @@ header nav {
 }
 
 .project-object {
-  padding: 20px;
+  padding: 15px;
   border: 1px solid #ffffff;
 }
 
@@ -329,3 +335,7 @@ header nav {
     align-items: center;
   }
 }
+
+
+
+

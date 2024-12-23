@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Linking the external css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -19,7 +18,7 @@
 </head>
 
 <body>
-    <o-neko id="nekoFollower" speed="10" style="position: fixed; filter: z-index 1000; transform: scale(1.5)"></o-neko>
+    <o-neko id="nekoFollower" speed="10" style="position: fixed; filter: z-index 10000; transform: scale(1.5)"></o-neko>
     <div id="wrapper">
         <div id="main-container">
             <!-- Header -->
@@ -37,6 +36,7 @@
                 </nav>
             </header>
 
+            <!-- home section-->
             <section id="home">
                 <div class="home-content">
                     <h1>Welcome to My Portfolio</h1>
@@ -71,23 +71,55 @@
                 </div>
             </section>
 
-            <!-- skills section-->
+            
             <section id="skill-section">
                 <div class="header">
                     <h1><span style="color: #c470db;">#</span>Skills</h1>
                 </div>
-
-                <div class="skill-container"> 
+                <div class="skill-container">
                     <div class="skill-object">
-                        <div class="skill-info">
-                            <h2><span style="color: #c470db;"><></span> Languages</h2>
-                            <img src="assets/svg/c++.svg" alt="">
-                            <img src="assets/svg/java.svg" alt="">
-                            <img src="assets/svg/python.svg" alt="">
-                        </div>
+                        <img class="skill-object-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                        <div class="skill-object-name">HTML 5</div>
+                    </div>
+                    <div class="skill-object">
+                        <img class="skill-object-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg">
+                        <div class="skill-object-name">CSS3</div>
+                    </div>
+                    <div class="skill-object">
+                        <img class="skill-object-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+                        <div class="skill-object-name">JavaScript</div>
+                    </div>
+                    <div class="skill-object">
+                        <img class="skill-object-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg">
+                        <div class="skill-object-name">Git</div>
+                    </div>
+                    <div class="skill-object">
+                        <img class="skill-object-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg">
+                        <div class="skill-object-name">Bootstrap</div>
+                    </div>
+                    <div class="skill-object">
+                        <img class="skill-object-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg">
+                        <div class="skill-object-name">Java</div>
+                    </div>
+                    <div class="skill-object">
+                        <img class="skill-object-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg">
+                        <div class="skill-object-name">C++</div>
+                    </div>
+                    <div class="skill-object">
+                        <img class="skill-object-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg">
+                        <div class="skill-object-name">Python</div>
+                    </div>
+                    <div class="skill-object">
+                        <img class="skill-object-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg">
+                        <div class="skill-object-name">PostgreSQL</div>
                     </div>
                 </div>
             </section>
+            
+            
+
+     
+
 
             <!-- projects Section -->
             <section id="project-section">
@@ -132,7 +164,18 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="project-object">
+                        <div class="project-image">
+                            <img src="assets/images/project4.png">
+                        </div>
+                        <div class="project-info">
+                            <h2 class="project-title">Bubble Merge Hybrid Sort</h2>
+                            <p class="project-desc">Hybrid sorting algorithm that combines both Bubble Sort and Merge Sort</p>
+                            <div class="status">
+                                <a href="https://github.com/HarV1821/BubbleMergeHybridSort" class="btn">Github →</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
