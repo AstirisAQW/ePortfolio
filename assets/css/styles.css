@@ -1,14 +1,15 @@
 
 body {
+  margin: 0;
+  padding: 0;
   background-color: #282c33;
-  color: #ffffff;
   font-family: 'Poppins', Arial, sans-serif;
 }
 
 /* Wrapper */
 #wrapper {
-  width: 70em; /* Increase to desired width */
-  max-width: calc(100% - 4em);
+  width: 60em; /* Increase to desired width */
+  max-width: calc(100em);
   margin: 0 auto;
   padding-top: 80px;
 }
@@ -52,39 +53,26 @@ a {
   transition: all 0.2s ease-in-out;
 }
 
-/* Buttons */
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  border: 2px solid #c470db;
-  color: #ffffff;
-  background: none;
-  transition: all 0.2s ease;
-}
-
-.btn:hover {
-  background-color: #c470db61;
-}
-
 /* Header */
 header {
   position: fixed;
-  z-index: 1;
+  z-index: 1000; /* Ensure it's above other content */
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100%; /* Ensure it spans the full width */
+  background-color: #282c33; /* Ensure a visible background */
+  margin: 0;
 }
 
 header nav {
-  max-width: 64em;
-  width: calc(100% - 4em);
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #282c33;
+  width: 100%;
+  max-width: 64em;
+  margin: 0 auto;
+  padding: 0.5em 2em; /* Add consistent padding */
+  background-color: inherit; /* Use header's background */
 }
 
 @media screen and (max-width: 768px) {
@@ -110,11 +98,13 @@ header nav {
   display: flex;
   list-style: none;
   gap: 40px;
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
 }
 
 .nav-menu a {
   font-size: 1.2rem;
-  color: #abb2bf;
+  color: #9aa1ad;
 }
 
 /* Highlight the active navigation link */
@@ -122,7 +112,6 @@ header nav {
   color: #ffffff;
   font-weight: bold;
   border-bottom: 2px solid #ffffff;
-  transition: all 0.3s ease;
 }
 
 .nav-menu a:hover {
@@ -134,6 +123,7 @@ header nav {
   align-items: center;
   justify-content: space-between;
   padding: 100px 40px;
+  background-color: #282c33;
 }
 
 .home-content {
@@ -152,24 +142,8 @@ header nav {
   margin-bottom: 20px;
 }
 
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  border: 2px solid #c470db;
-  color: #ffffff;
-  background: none;
-  transition: all 0.2s ease;
-}
-
-.btn:hover {
-  background-color: #c470db61;
-}
-
-
 #about-me-section {
+  background-color: #282c33;
   padding: 40px;
 }
 
@@ -194,7 +168,7 @@ header nav {
 .about-me-image img {
   width: 100%;
   max-width: 300px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -220,24 +194,26 @@ header nav {
 
 .skill-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(4,1fr);
   gap: 20px;
 }
 
 .skill-object {
   display: flex;
   align-items: center;
-  border: 1px solid #ffffff;
+  border: 1px solid #9aa1ad;
   padding: 10px 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px #0000001a;
+  background-color: #282c33;
 }
-
+.skill-object:hover{
+  background-color: #2f343d;
+}
 
 .skill-object-img {
   width: 40px;
   height: 40px;
-  margin-right: 10px;
+  margin-right:15px;
 }
 
 .skill-object-name {
@@ -249,7 +225,8 @@ header nav {
 
 /* Project Section */
 #project-section {
-  padding: 40px 40px;
+  padding: 40px;
+  background-color: #282c33;
 }
 
 .header {
@@ -261,37 +238,90 @@ header nav {
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr); /* Always create 3 equal columns */
+  gap: 30px; /* Space between the grid items */
+}
+@media screen and (max-width: 768px) {
+  .project-container {
+    grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-container {
+    grid-template-columns: 1fr; /* Adjust to 1 column for very small screens */
+  }
 }
 
 .project-object {
-  padding: 15px;
-  border: 1px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #9aa1ad;
+  padding: 10px;
+  box-shadow: 0 4px 6px #0000001a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-object:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px #00000048;
 }
 
 .project-image img {
   width: 100%;
-  height: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.project-tech-stack {
+  display: flex;
+  gap: 10px;
+  font-size: 0.8rem;
+  color: #9aa1ad;
+}
+
+.project-tech-stack span {
+  background-color: #333842;
+  padding: 5px 10px;
+  border-radius: 3px;
 }
 
 .project-info h2 {
-  margin-top: 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #ffffff;
 }
 
 .project-info p {
-  margin-bottom: 10px;
   font-size: 1rem;
+  color: #9aa1ad;
+  margin-bottom: 15px;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-links .btn {
+  font-size: 0.9rem;
+  padding: 8px 15px;
+  border: 2px solid #c470db;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.project-links .btn:hover {
+  background-color: #c470db61;
   color: #ffffff;
 }
 
 /* Contact Section */
 #contact-section {
-  padding:  20px;
+  background-color: #282c33;
+  padding:  10px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
   border-top: 1px solid #ffffff;
@@ -299,7 +329,6 @@ header nav {
 
 #contact-section h1 {
   font-size: 1.5rem;
-  margin-bottom: 10px;
   text-align: center;
   color: #ffffff;
 }
@@ -308,12 +337,12 @@ header nav {
 #contact-section .contact-icons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 #contact-section .contact-icons a {
-  color: #ffffff;
-  font-size: 2.5rem;
+  color: #9aa1ad;
+  font-size: 2rem;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -326,7 +355,7 @@ header nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
+
 }
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
