@@ -29,7 +29,6 @@ body {
 
 #main-container{
   background-color: #282c33;
-
 }
 
 h1, h2, h3 {
@@ -92,6 +91,38 @@ header nav {
   font-size: 1.2rem;
   font-weight: bold;
   color: #ffffff;
+}
+/* Default hidden menu for smaller screens */
+.nav-menu {
+  display: flex;
+}
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+      display: none;
+      position: absolute;
+      top: 70px; /* Adjust based on header height */
+      right: 0;
+      width: 100%;
+      background-color: #282c33;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .nav-menu.active {
+      display: flex;
+  }
+
+  .burger-menu {
+      display: block;
+  }
 }
 
 .nav-menu ul {
@@ -221,7 +252,11 @@ header nav {
   font-weight: 500;
   color: #ffffff;
 }
-
+@media screen and (max-width: 768px) {
+  .skill-container {
+    grid-template-columns: repeat(3, 1fr); /* Adjust to 3 columns for smaller screens */
+  }
+}
 
 /* Project Section */
 #project-section {
@@ -364,7 +399,3 @@ header nav {
     align-items: center;
   }
 }
-
-
-
-
