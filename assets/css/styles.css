@@ -153,29 +153,27 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 100px 40px;
+  padding: 17em 0em; /* Add consistent padding */
   background-color: #282c33;
 }
 
 .home-content {
-  max-width: 600px;
   color: #ffffff;
 }
 
 .home-content h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
   color: #c470db;
 }
 
 .home-content p {
   font-size: 1.2rem;
-  margin-bottom: 20px;
 }
 
 #about-me-section {
   background-color: #282c33;
-  padding: 40px;
+  padding: 3em 0em; /* Add consistent padding */
 }
 
 .about-me-container {
@@ -212,8 +210,9 @@ header nav {
 }
 
 #skill-section {
-  padding: 40px;
   background-color: #282c33;
+  padding: 3em 0em; /* Add consistent padding */
+
 }
 
 .header {
@@ -260,7 +259,7 @@ header nav {
 
 /* Project Section */
 #project-section {
-  padding: 40px;
+  padding: 3em 0em; /* Add consistent padding */
   background-color: #282c33;
 }
 
