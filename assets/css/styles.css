@@ -1,8 +1,7 @@
-
 body {
   margin: 0;
   padding: 0;
-  background-color: #282c33;
+  background-color: #1f1f2e; /* Darker background for contrast */
   font-family: 'Poppins', Arial, sans-serif;
 }
 
@@ -28,7 +27,7 @@ body {
 }
 
 #main-container{
-  background-color: #282c33;
+  background-color: #1f1f2e;
 }
 
 h1, h2, h3 {
@@ -43,7 +42,7 @@ h1::after {
   display: block;
   width: 150%;
   height: 2px;
-  background-color: #c470db;
+  background-color: #ff6f61;
   margin: 5px auto 0;
 }
 
@@ -59,7 +58,7 @@ header {
   top: 0;
   left: 0;
   width: 100%; /* Ensure it spans the full width */
-  background-color: #282c33; /* Ensure a visible background */
+  background-color: #1f1f2e; /* Ensure a visible background */
   margin: 0;
 }
 
@@ -92,6 +91,7 @@ header nav {
   font-weight: bold;
   color: #ffffff;
 }
+
 /* Default hidden menu for smaller screens */
 .nav-menu {
   display: flex;
@@ -111,7 +111,7 @@ header nav {
       top: 70px; /* Adjust based on header height */
       right: 0;
       width: 100%;
-      background-color: #282c33;
+      background-color: #1f1f2e;
       flex-direction: column;
       text-align: center;
   }
@@ -135,7 +135,7 @@ header nav {
 
 .nav-menu a {
   font-size: 1.2rem;
-  color: #9aa1ad;
+  color: #b8c4c8;
 }
 
 /* Highlight the active navigation link */
@@ -154,7 +154,7 @@ header nav {
   align-items: center;
   justify-content: space-between;
   padding: 17em 0em; /* Add consistent padding */
-  background-color: #282c33;
+  background-color: #1f1f2e;
 }
 
 .home-content {
@@ -164,7 +164,7 @@ header nav {
 .home-content h1 {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  color: #c470db;
+  color: #ff6f61;
 }
 
 .home-content p {
@@ -172,7 +172,7 @@ header nav {
 }
 
 #about-me-section {
-  background-color: #282c33;
+  background-color: #1f1f2e;
   padding: 3em 0em; /* Add consistent padding */
 }
 
@@ -210,9 +210,8 @@ header nav {
 }
 
 #skill-section {
-  background-color: #282c33;
+  background-color: #1f1f2e;
   padding: 3em 0em; /* Add consistent padding */
-
 }
 
 .header {
@@ -231,19 +230,22 @@ header nav {
 .skill-object {
   display: flex;
   align-items: center;
-  border: 1px solid #9aa1ad;
+  border: 1px solid #b8c4c8;
   padding: 10px 20px;
-  box-shadow: 0 4px 6px #0000001a;
-  background-color: #282c33;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: #1f1f2e;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
-.skill-object:hover{
+
+.skill-object:hover {
   background-color: #2f343d;
+  transform: translateY(-3px);
 }
 
 .skill-object-img {
   width: 40px;
   height: 40px;
-  margin-right:15px;
+  margin-right: 15px;
 }
 
 .skill-object-name {
@@ -251,6 +253,7 @@ header nav {
   font-weight: 500;
   color: #ffffff;
 }
+
 @media screen and (max-width: 768px) {
   .skill-container {
     grid-template-columns: repeat(3, 1fr); /* Adjust to 3 columns for smaller screens */
@@ -260,7 +263,7 @@ header nav {
 /* Project Section */
 #project-section {
   padding: 3em 0em; /* Add consistent padding */
-  background-color: #282c33;
+  background-color: #1f1f2e;
 }
 
 .header {
@@ -275,6 +278,7 @@ header nav {
   grid-template-columns: repeat(3, 1fr); /* Always create 3 equal columns */
   gap: 30px; /* Space between the grid items */
 }
+
 @media screen and (max-width: 768px) {
   .project-container {
     grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns for smaller screens */
@@ -290,15 +294,15 @@ header nav {
 .project-object {
   display: flex;
   flex-direction: column;
-  border: 1px solid #9aa1ad;
+  border: 1px solid #b8c4c8;
   padding: 10px;
-  box-shadow: 0 4px 6px #0000001a;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-object:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 6px #00000048;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.32);
 }
 
 .project-image img {
@@ -311,7 +315,7 @@ header nav {
   display: flex;
   gap: 10px;
   font-size: 0.8rem;
-  color: #9aa1ad;
+  color: #b8c4c8;
 }
 
 .project-tech-stack span {
@@ -327,7 +331,7 @@ header nav {
 
 .project-info p {
   font-size: 1rem;
-  color: #9aa1ad;
+  color: #b8c4c8;
   margin-bottom: 15px;
 }
 
@@ -340,25 +344,26 @@ header nav {
 .project-links .btn {
   font-size: 0.9rem;
   padding: 8px 15px;
-  border: 2px solid #c470db;
+  border: 2px solid #ff6f61;
   color: #ffffff;
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .project-links .btn:hover {
-  background-color: #c470db61;
+  background-color: rgba(255, 112, 101, 0.3);
   color: #ffffff;
 }
 
 /* Contact Section */
 #contact-section {
-  background-color: #282c33;
-  padding:  10px;
+  background-color: #1f1f2e;
+  padding: 10px;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   border-top: 1px solid #ffffff;
+  padding-bottom: 300px;
 }
 
 #contact-section h1 {
@@ -367,7 +372,6 @@ header nav {
   color: #ffffff;
 }
 
-
 #contact-section .contact-icons {
   display: flex;
   justify-content: center;
@@ -375,13 +379,13 @@ header nav {
 }
 
 #contact-section .contact-icons a {
-  color: #9aa1ad;
+  color: #b8c4c8;
   font-size: 2rem;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 #contact-section .contact-icons a:hover {
-  color: #c470db;
+  color: #ff6f61;
   transform: scale(1.1);
 }
 
@@ -389,8 +393,8 @@ header nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
+
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
   #contact-section {
