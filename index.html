@@ -1,184 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AstirisAQW</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="assets/images/profile2.png">
-</head>
-<body>
-  <o-neko id="nekoFollower" speed="30" style="position: fixed; z-index: 20; transform: scale(2.0)"></o-neko>
-  <div class="container">
-    <div class="sidebar">
-      <div class="sidebar-title">Index</div>
-      <hr class="custom-hr">
-      <a href="#about">about</a>
-      <a href="#projects">projects</a>
-      <a href="#links">links</a>
-      <a href="resume/resume.html" data-external="true" class="resume-link">resume</a>
-    </div>
-    <div class="content">
-      <div id="about" class="content-section">
-        <div class="content-section-header">
-          <img src="assets/images/profile2.png" alt="AstirisAQW Avatar" class="content-section-header-avatar">
-          <span class="content-section-header-name">AstirisAQW</span>
-        </div>
-        <hr class="custom-hr">
-        <div class="content-section-body">
-          <div class="content-section-body-title">ABOUT</div>
-          <p class="about-intro">Computer Science graduate from the University of Science and Technology of Southern Philippines. I am comfortable working across the full range of software development — from low-level systems and algorithm design to web applications, data analysis, and tooling.</p>
-          <div class="content-section-body-title">EDUCATION</div>
-          <div class="content-section-body-items">
-            <p class="content-section-education-item">Bachelor of Science in Computer Science</p>
-            <span class="content-section-education-item-details">(Graduated 2026, Cum Laude)</span>
-          </div>
-          <div class="content-section-body-title">HONORS &amp; AWARDS</div>
-          <div class="honors-list">
-            <div class="honor-item">
-              <span class="honor-name">Cum Laude</span>
-              <span class="honor-detail">USTP, 2026</span>
-            </div>
-            <div class="honor-item">
-              <span class="honor-name">DOST-SEI JLSS Scholar</span>
-              <span class="honor-detail">Dept. of Science &amp; Technology</span>
-            </div>
-            <div class="honor-item">
-              <span class="honor-name">Dean's Lister</span>
-              <span class="honor-detail">All semesters, 2022–2026</span>
-            </div>
-          </div>
-          <div class="content-section-body-title">CERTIFICATIONS &amp; BADGES</div>
-          <div class="cert-list">
-            <div class="cert-item">
-              <img src="assets/images/Cisco_NetworkingBasics_Badge.png" alt="Cisco Networking Basics Badge" class="cert-badge-img">
-              <div class="cert-details">
-                <span class="cert-name">Networking Basics</span>
-                <span class="cert-issuer">Cisco</span>
-                <span class="cert-date">Dec 2024</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="projects" class="content-section">
-        <div class="content-section-body">
-          <div class="content-section-body-title">PROJECTS</div>
-          <div class="project-card-grid">
-            <div class="project-card">
-              <img src="assets/images/OnracSys.png" class="project-card-image">
-              <div class="project-card-body">
-                <h4 class="project-card-title">Loan Manager</h4>
-                <p class="project-card-desc">A full-stack rewrite of a legacy ASP.NET cooperative loan management system using React, Node.js, TypeScript, and MySQL.</p>
-                <a href="https://github.com/AstirisAQW/OnracSys" target="_blank" rel="noopener noreferrer" class="project-github-btn">
-                  <img src="assets/icons/icons8-github.svg" alt="GitHub"><span>Github</span>
-                </a>
-              </div>
-            </div>
-            <div class="project-card">
-              <img src="assets/images/Dymon.png" class="project-card-image">
-              <div class="project-card-body">
-                <h4 class="project-card-title">DyMoN</h4>
-                <p class="project-card-desc">Post-hoc anomaly detection module for temporal graphs tracking node embedding kinematics, built with PyTorch and NetworkX.</p>
-                <a href="https://github.com/Ofen-Lovers/DyMoN" target="_blank" rel="noopener noreferrer" class="project-github-btn">
-                  <img src="assets/icons/icons8-github.svg" alt="GitHub"><span>Github</span>
-                </a>
-              </div>
-            </div>
-            <div class="project-card">
-              <img src="assets/images/DFA-NFA Simulator.png" class="project-card-image">
-              <div class="project-card-body">
-                <h4 class="project-card-title">DFA-NFA Simulator</h4>
-                <p class="project-card-desc">Interactive browser-based finite automaton simulator using vanilla JS and Vis.js for graph visualization.</p>
-                <a href="https://github.com/Ofen-Lovers/DFA-and-NFA-Simulator" target="_blank" rel="noopener noreferrer" class="project-github-btn">
-                  <img src="assets/icons/icons8-github.svg" alt="GitHub"><span>Github</span>
-                </a>
-              </div>
-            </div>
-            <div class="project-card">
-              <img src="assets/images/BlackJack-in-MIPS.png" class="project-card-image">
-              <div class="project-card-body">
-                <h4 class="project-card-title">BlackJack in MIPS</h4>
-                <p class="project-card-desc">Single-player Blackjack game implemented in MIPS assembly language, demonstrating low-level programming concepts.</p>
-                <a href="https://github.com/AstirisAQW/BlackJack-MIPS-Assembly" target="_blank" rel="noopener noreferrer" class="project-github-btn">
-                  <img src="assets/icons/icons8-github.svg" alt="GitHub"><span>Github</span>
-                </a>
-              </div>
-            </div>
-            <div class="project-card">
-              <img src="assets/images/Edelweiss E-commerce.png" class="project-card-image">
-              <div class="project-card-body">
-                <h4 class="project-card-title">Edelweiss E-commerce</h4>
-                <p class="project-card-desc">Full-stack e-commerce website built with React, TypeScript, Supabase, and hosted on Vercel.</p>
-                <a href="https://github.com/Ofen-Lovers/Edelweiss" target="_blank" rel="noopener noreferrer" class="project-github-btn">
-                  <img src="assets/icons/icons8-github.svg" alt="GitHub"><span>Github</span>
-                </a>
-              </div>
-            </div>
-            <div class="project-card">
-              <img src="assets/images/Bubble Merge Hybrid Sort.png" class="project-card-image">
-              <div class="project-card-body">
-                <h4 class="project-card-title">Hybrid Merge Sort</h4>
-                <p class="project-card-desc">Research paper proposing a Hybrid Merge Sort that integrates Bubble Sort for smaller sub-arrays to reduce recursive overhead.</p>
-                <a href="https://github.com/HarV1821/BubbleMergeHybridSort" target="_blank" rel="noopener noreferrer" class="project-github-btn">
-                  <img src="assets/icons/icons8-github.svg" alt="GitHub"><span>Github</span>
-                </a>
-              </div>
-            </div>
-            <div class="project-card">
-              <img src="assets/images/Stardew Valley Mod.png" class="project-card-image">
-              <div class="project-card-body">
-                <h4 class="project-card-title">Stardew Valley Mod</h4>
-                <p class="project-card-desc">Custom NPC mod for Stardew Valley with unique backstory, dialogue, heart events, and marriage integration using C#.</p>
-                <a href="https://github.com/Ofen-Lovers/Stardew-Valley-Mod" target="_blank" rel="noopener noreferrer" class="project-github-btn">
-                  <img src="assets/icons/icons8-github.svg" alt="GitHub"><span>Github</span>
-                </a>
-              </div>
-            </div>
-            <div class="project-card">
-              <img src="assets/images/ForecaSteam.png" class="project-card-image">
-              <div class="project-card-body">
-                <h4 class="project-card-title">ForecaSteam</h4>
-                <p class="project-card-desc">ML pipeline predicting game popularity on Steam by analyzing metadata to estimate ownership distributions.</p>
-                <a href="https://github.com/Ofen-Lovers/ForecaSteam" target="_blank" rel="noopener noreferrer" class="project-github-btn">
-                  <img src="assets/icons/icons8-github.svg" alt="GitHub"><span>Github</span>
-                </a>
-              </div>
-            </div>
-            <div class="project-card project-card--portfolio">
-              <img src="assets/images/eportfolio.png" class="project-card-image">
-              <div class="project-card-body">
-                <h4 class="project-card-title">This Portfolio</h4>
-                <p class="project-card-desc">Personal portfolio site built with HTML, CSS, and JavaScript, hosted on GitHub Pages.</p>
-                <a href="https://github.com/AstirisAQW/eportfolio" target="_blank" rel="noopener noreferrer" class="project-github-btn">
-                  <img src="assets/icons/icons8-github.svg" alt="GitHub"><span>Github</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AstirisAQW ePortfolio</title>
+    <link rel="icon" href="assets/images/eportfolio.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="layout">
 
-      <div id="links" class="content-section">
-        <div class="content-section-body">
-          <div class="content-section-body-title">LINKS</div>
-          <div class="social-links-grid">
-            <a href="https://github.com/AstirisAQW" target="_blank" class="social-link-item">
-              <img src="assets/icons/icons8-github.svg" alt="Github icon">
-              <span>Github</span>
-            </a>
-            <a href="https://www.linkedin.com/in/joseph-deysolong/" target="_blank" class="social-link-item">
-              <img src="assets/icons/icons8-linkedin.svg" alt="LinkedIn icon">
-              <span>LinkedIn</span>
-            </a>
+      <!-- Navigation -->
+      <aside class="sidebar">
+        <div class="sidebar-title">Index</div>
+        <hr class="sidebar-rule" />
+        <nav class="nav-links">
+          <a href="#/" class="nav-btn" data-route="/">about</a>
+          <a href="#/projects" class="nav-btn" data-route="/projects">projects</a>
+          <a href="#/resume" class="nav-btn" data-route="/resume">resume</a>
+        </nav>
+      </aside>
+
+      <!-- Main content -->
+      <main class="main-content">
+
+        <!-- About page -->
+        <section id="page-about" class="page">
+          <div class="about-header">
+            <div class="about-header-row">
+              <img id="profile-avatar" src="assets/images/profile2.png" alt="Profile avatar" class="profile-avatar" />
+              <div>
+                <span id="profile-name" class="profile-name">AstirisAQW</span>
+                <div class="social-links">
+                  <a id="profile-github" href="https://github.com/AstirisAQW" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <img src="assets/icons/github-svgrepo-com.svg" alt="GitHub Icon" class="social-icon" />
+                  </a>
+                  <a id="profile-linkedin" href="https://www.linkedin.com/in/joseph-deysolong/" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <img src="assets/icons/linkedin-svgrepo-com.svg" alt="LinkedIn Icon" class="social-icon" />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+
+          <hr class="section-rule" />
+
+          <div class="about-body">
+            <div>
+              <div class="section-label">About</div>
+              <p id="profile-bio" class="profile-bio">Computer Science graduate from the University of Science and Technology of Southern Philippines. I am comfortable working across the full range of software development — from low-level systems and algorithm design to web applications, data analysis, and tooling.</p>
+            </div>
+
+            <div>
+              <div class="section-label">Education</div>
+              <div class="bordered-item">
+                <p id="profile-degree" class="degree-text">Bachelor of Science in Computer Science</p>
+                <span id="profile-graduation" class="graduation-text">(Graduated 2026, Cum Laude)</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="section-label">Honors &amp; Awards</div>
+              <div id="honors-list" class="honors-list"><!-- populated by script.js --></div>
+            </div>
+
+            <div>
+              <div class="section-label">Certifications &amp; Badges</div>
+              <div id="cert-list" class="cert-list"><!-- populated by script.js --></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects page -->
+        <section id="page-projects" class="page" hidden>
+          <div class="page-header">
+            <div class="page-title">Projects</div>
+          </div>
+          <div id="project-grid" class="project-grid"><!-- populated by script.js --></div>
+        </section>
+
+        <!-- Resume page -->
+        <section id="page-resume" class="page" hidden>
+          <div class="page-header">
+            <div class="page-title">Resume</div>
+          </div>
+          <div class="resume-frame-wrap">
+            <iframe src="resume/JosephDeysolong-CV.pdf" class="resume-frame" title="Resume PDF"></iframe>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- Footer -->
+      <div class="footer-badge">AstirisAQW</div>
+
     </div>
-  </div>
-  <div class="footer">AstirisAQW</div>
-  <script src="script.js"></script>
-  <script src="neko/oneko.js"></script>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
